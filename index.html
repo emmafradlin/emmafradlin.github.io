@@ -1,0 +1,64 @@
+<head>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <script src="https://cdn.jsdelivr.net/npm/canvas-confetti@1.9.3/dist/confetti.browser.min.js"></script>
+    <audio id="audio" src="dingSound.mp3"></audio>
+
+    
+    <Body background="background.jpg">
+
+    
+    </br>
+    </br>
+    
+    <img src="bingoImages/row.png" id="bingoImages">
+    <div id="main-circle"></div>
+        <div id="settingButtons">
+            
+
+        <button id="startButton">Start</button>
+        
+        <button id="winnerButton">Winner</button>
+        <button id="controlButton">Show controls</button>
+        <div id="controls" style="display: none;">
+            <p>Choose the time interval</p>
+            
+            <div class = "container" >
+                <input type="range" min="3" max="20" value="1" class="slider" id="mySlider">
+                <p id="myPara">the time is</p>
+            </div>
+                
+            <p>Choose the game mode</p>
+            <select name="gameStyle" id="gameStyle">
+                <option value="rows">Regular</option>
+                <option value="4 corners">4 corners</option>
+                <option value="blackout">Blackout</option>
+                <option value="outline">Around the world</option>
+                <option value="diamond">Diamond</option>
+                <option value="C">C</option>
+                <option value="H">H</option>
+                <option value="S">S</option>
+                <option value="X">X</option>
+                <option value="Z">Z</option>
+                <option value="I">I</option>
+            </select> 
+            
+        
+            <button id="newRoundButton">New round</button>
+        </div>
+    </div>
+    
+    
+
+    </br>
+    </br>
+    </br>
+    <div id="circle-container"></div>
+    </br>
+
+    
+    <!--<h1 class="numbers"></h1>-->
+    <!--<h1 class="numbers"></h1>-->
+    <script src="script.js"></script>
+</body>

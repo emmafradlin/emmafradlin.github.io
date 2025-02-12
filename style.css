@@ -1,0 +1,114 @@
+body {
+    overflow: auto;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+
+}
+
+img{
+    position: absolute;
+    left: 80vw;
+    height: 25vh;
+    width: 25vh;
+}
+
+
+/*slider*/
+.container {
+    display: flex;
+    align-items: center;
+    gap: 2vw;
+}
+
+
+
+#settingButtons {
+    left: 80vw;
+    position: absolute;
+    top: 0vw;
+}
+
+button {
+    border-radius: 10%;
+    font-family:"cursive";
+    background-color: #c42116;
+    color: white;
+}
+
+
+/* little circle container */
+#circle-container {
+    display: grid;
+    grid-template-columns: repeat(15, 1fr);
+    grid-gap: 1vw;
+    padding: 2vw;
+    position: relative;
+    height: 10vh;
+}
+
+/* each individual little circle */
+.circle {
+    aspect-ratio: 1;
+    width: 5vw;
+    height: 10vh;
+    background-color: #82abfd;
+    display: flex;
+    border-radius: 50%;
+    align-items: center;
+    justify-content: center;
+    font-size: 100%;
+    color: white;
+    flex-direction: column;
+    white-space: pre-line;
+    text-align: center;
+}
+
+/* container of the big */
+#main-circle {
+    width: 10vw;
+    height: 30vh;
+    left: 100px;
+    display: flex; 
+    left: 0%; 
+    justify-content: center; 
+    overflow: visible; 
+    width: 100%;
+    height: 20%; 
+    position: relative;
+    gap: 5%; 
+    padding: 0%; 
+}
+
+/* big circle calling the number */
+.big-circle {
+    left: 100%;
+    background-color:#1423ad;
+    border-radius: 50%;
+    width: 5%; 
+    height: 50%;
+    padding: 5%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+    font-size: 300%;
+    color: white;
+    flex-shrink: 0; 
+    position: absolute;
+    transition: left 0.5s ease-in-out, background-color 0.5s ease-in-out;
+}
+
+
+@keyframes shiftLeft {
+    0%{
+       width: 5%;
+        height: 40%; 
+    }
+    100%{
+        width: 3%;
+        height: 30%;
+        opacity: 0.7;
+        font-size: 290%;
+    }
+}
