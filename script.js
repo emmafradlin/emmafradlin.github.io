@@ -39,7 +39,6 @@ gameStyle.addEventListener('change', () => {
         document.getElementById('bingoImages').src= "bingoImages/x.png";
         
     } else if (value === "Z") {
-        document.getElementById('bingoImages').src= "bingoImages/z.png";
     } else if (value === "C") {
         document.getElementById('bingoImages').src= "bingoImages/c.png";
     } else if (value === "S") {
@@ -345,7 +344,7 @@ function addCircle(randomValue, updatedLetter, num, letter) {
                 circle.style.width = "3%";
                 circle.style.height = "30%"
                 circle.style.opacity = "0.7";
-                circle.style.fontSize = "290%"
+                circle.style.fontSize = "500%"
                 circle.style.animation = "shiftLeft 1s ease-in-out";
                 
             }
